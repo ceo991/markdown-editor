@@ -8,7 +8,7 @@ class Preview extends Component{
     
     render(){
       
-      return <div  className="comp2" >
+      return <div  className="preview" >
                 <h1>Preview</h1>
                 <DisplayModeButton  changeDisplayMode={this.props.changeDisplayMode} mode={"preview"}/>
                 <div id="preview" dangerouslySetInnerHTML={{__html: marked.parse(this.props.content)}}/>

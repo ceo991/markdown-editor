@@ -3,13 +3,13 @@ body{
   margin:0;
 }
 
-.comp1{
+.editor{
  background-color:#fce3b6;
  height: 100vh;
  overflow-y:scroll;
 }
 
-.comp2{
+.preview{
  background-color: #c9c8c5; 
  height: 100vh;
  overflow-y:scroll;
