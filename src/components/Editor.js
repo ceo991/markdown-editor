@@ -10,7 +10,7 @@ class Editor extends Component{
       
       return <div className="comp1">
               <h1>Markdown Editor</h1>
-              <DisplayModeButton changeDisplayMode={this.props.changeDisplayMode} mode={"edit"}/>
+              <DisplayModeButton changeDisplayMode={this.props.changeDisplayMode} mode={"editor"}/>
               <textarea id="editor" rows="50" cols="90" onChange={(e)=>this.props.changeState(e.target.value)}>{this.props.content}</textarea>
             </div>
     }

@@ -37,7 +37,7 @@ class App extends Component{
                 >
                     <Editor content={this.state.content} changeState={this.handleOnChange} changeDisplayMode={this.changeDisplayMode}/>
                     <Preview content={this.state.content} changeDisplayMode={this.changeDisplayMode}/>
-                </Split> : this.state.displayMode === "edit" ? <Editor content={this.state.content} changeState={this.handleOnChange} changeDisplayMode={this.changeDisplayMode}/> : this.state.displayMode === "prev" ?  <Preview content={this.state.content} changeDisplayMode={this.changeDisplayMode}/> : <div><h1>Something is wrong!</h1></div>
+                </Split> : this.state.displayMode === "editor" ? <Editor content={this.state.content} changeState={this.handleOnChange} changeDisplayMode={this.changeDisplayMode}/> : this.state.displayMode === "preview" ?  <Preview content={this.state.content} changeDisplayMode={this.changeDisplayMode}/> : <div><h1>Something is wrong!</h1></div>
               }
             </div>
   }
